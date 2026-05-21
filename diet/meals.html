@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Shape Up! | Meal Plan</title>
+	<link rel="icon" href="../images/favicon.ico">
+	<link rel="stylesheet" href="../styles/main.css">
+</head>
+
+<body>
+
+<header>
+	<img src="../images/shape_up_logo.png" alt="Shape Up logo">
+	<div>
+		<h1>Shape Up!</h1>
+		<h2>Find the best fit for you</h2>
+	</div>
+</header>
+
+<nav class="navbar">
+	<input type="checkbox" id="menu-toggle">
+	<label for="menu-toggle" class="menu-btn"></label>
+
+	<ul class="menu">
+		<li><a href="../index.html">Home</a></li>
+
+		<li>
+			<a href="../strength/strength.html">Strength Training</a>
+			<ul class="submenu">
+				<li><a href="../strength/strength.html">Build strong muscles</a></li>
+			</ul>
+		</li>
+
+		<li>
+			<a href="../cardio/cardio.html">Cardio Exercise</a>
+			<ul class="submenu">
+				<li><a href="../cardio/cardio.html">Get your heart rate up</a></li>
+			</ul>
+		</li>
+
+		<li>
+			<a href="../stress/stress.html">Stress Management</a>
+			<ul class="submenu">
+				<li><a href="../stress/stress.html">Stress Relief</a></li>
+				<li><a href="../stress/tips.html">5 Helpful Tips</a></li>
+				<li><a href="../stress/meditate.html">Meditate</a></li>
+				<li><a href="../stress/vipassana.html">Vipassana</a></li>
+			</ul>
+		</li>
+
+		<li>
+			<a href="diet.html" class="current">Healthy Diets</a>
+			<ul class="submenu">
+				<li><a href="diet.html">Why a balanced diet?</a></li>
+				<li><a href="meals.html">Plan your meals</a></li>
+				<li><a href="calories.html">Count your calories</a></li>
+				<li><a href="bmi.html">Calculate your BMI</a></li>
+			</ul>
+		</li>
+	</ul>
+</nav>
+
+<main>
+	<section>
+		<h2>Meal plan order form</h2>
+
+		<p>
+			Fill out the form as completely as possible and we will email you a weekly meal plan,
+			customized for you--your lifestyle, your goals, and your personal needs.
+		</p>
+
+		<p>Asterisks (*) indicate required entries.</p>
+
+		<form action="#" method="post">
+
+			<fieldset>
+				<legend>Tell us about yourself</legend>
+
+				<label for="full_name">Full name *</label>
+				<input type="text" id="full_name" name="full_name" required>
+
+				<label for="email">Email *</label>
+				<input type="email" id="email" name="email" required>
+
+				<label for="gender">Gender *</label>
+				<select id="gender" name="gender" required>
+					<option value="">Select a gender</option>
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+					<option value="non_binary">Non-Binary</option>
+				</select>
+
+				<label for="height">Height *</label>
+				<input type="text" id="height" name="height" placeholder="Example: 5ft, 6in" required>
+
+				<label for="weight">Weight *</label>
+				<input type="text" id="weight" name="weight" placeholder="Example: 145lbs" required>
+
+				<label for="age">Age</label>
+				<select id="age" name="age">
+					<option value="">Select your age</option>
+					<option value="under_18">under 18</option>
+					<option value="18_34">18 - 34</option>
+					<option value="35_44">35 - 44</option>
+					<option value="50_69">50 - 69</option>
+					<option value="70_plus">70+</option>
+				</select>
+			</fieldset>
+
+			<fieldset>
+				<legend>Lifestyle and goals</legend>
+
+				<p>Which currently matches your present lifestyle?</p>
+
+				<input type="radio" id="active" name="lifestyle" value="active" checked>
+				<label for="active" class="radio_label">Active</label>
+
+				<input type="radio" id="moderate" name="lifestyle" value="moderate">
+				<label for="moderate" class="radio_label">Moderate</label>
+
+				<input type="radio" id="sedentary" name="lifestyle" value="sedentary">
+				<label for="sedentary" class="radio_label">Sedentary</label>
+
+				<p>What are your weight goals?</p>
+
+				<input type="radio" id="gain" name="goal" value="gain" checked>
+				<label for="gain" class="radio_label">Gain</label>
+
+				<input type="radio" id="lose" name="goal" value="lose">
+				<label for="lose" class="radio_label">Lose</label>
+
+				<input type="radio" id="maintain" name="goal" value="maintain">
+				<label for="maintain" class="radio_label">Maintain</label>
+			</fieldset>
+
+			<fieldset>
+				<legend>Food preferences and restrictions</legend>
+
+				<p>Do you have any dietary restrictions? (select all that apply)</p>
+
+				<input type="checkbox" id="vegetarian" name="restrictions" value="vegetarian">
+				<label for="vegetarian" class="check_label">Vegetarian</label>
+
+				<input type="checkbox" id="gluten_free" name="restrictions" value="gluten_free">
+				<label for="gluten_free" class="check_label">Gluten-free</label>
+
+				<input type="checkbox" id="kosher" name="restrictions" value="kosher">
+				<label for="kosher" class="check_label">Kosher</label>
+
+				<input type="checkbox" id="low_salt" name="restrictions" value="low_salt">
+				<label for="low_salt" class="check_label">Low salt</label>
+
+				<br><br>
+
+				<input type="checkbox" id="other" name="restrictions" value="other">
+				<label for="other" class="check_label">Other, please explain:</label>
+
+				<textarea id="other_text" name="other_text"></textarea>
+			</fieldset>
+
+			<fieldset>
+				<input type="submit" value="Submit" class="button submit">
+				<input type="reset" value="Reset" class="button reset">
+			</fieldset>
+
+		</form>
+	</section>
+
+	<aside>
+		<h2>Additional resources</h2>
+		<ul>
+			<li><img src="../images/cardio-icon.png" alt=""> <a href="https://www.cdc.gov/physical-activity-basics/benefits/index.html">Physical activity and health</a></li>
+			<li><img src="../images/stretch-icon.png" alt=""> <a href="https://www.heart.org/en/healthy-living/fitness/fitness-basics/flexibility-exercise-stretching">Stretching exercises</a></li>
+			<li><img src="../images/strength-icon.png" alt=""> <a href="https://www.heart.org/en/healthy-living/fitness/fitness-basics/strength-and-resistance-training-exercise">Strength training</a></li>
+			<li><img src="../images/run-icon.png" alt=""> <a href="https://www.health.harvard.edu/exercise-and-fitness/interval-training-for-a-stronger-heart">Cardiovascular training</a></li>
+			<li><img src="../images/yoga-icon.png" alt=""> <a href="https://www.self.com/gallery/power-yoga-workout">Yoga workout</a></li>
+		</ul>
+	</aside>
+</main>
+
+<footer>
+	<p>&copy; Shape Up!</p>
+</footer>
+
+</body>
+</html>
